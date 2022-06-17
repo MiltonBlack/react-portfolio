@@ -1,11 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
 function Project() {
     return (
-        <nav>
+        <ProjectSection id="project">
             project
-        </nav>
+        </ProjectSection>
     );
 }
 
 export default Project;
+
+const ProjectSection = styled.section`
+    height:100vh;
+    background-color:blue;
+` 

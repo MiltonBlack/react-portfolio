@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaTimes} from "react-icons/fa";
+import { FaTimes, FaBars } from "react-icons/fa";
 
 function Navbar() {
     const [menu, setMenu] = React.useState(false);
@@ -9,11 +9,11 @@ function Navbar() {
     return (
         <Navigation>
             <Logo>Milton<span>AZIBAPU</span></Logo>
-            <Menu onClick={()=> setMenu(!menu)}>{menu ? <FaTimes/> : "MENU"}</Menu>
+            <Menu onClick={()=> setMenu(!menu)}>{menu ? <FaTimes/> : <FaBars/> }</Menu>
                 <LinkContainer menu={menu}>
                 <NavBarLink to="/">HOME</NavBarLink>
-                <NavBarLink to="/Project">Project</NavBarLink>
-                <NavBarLink to="/AboutUs">AboutUs</NavBarLink>
+                <NavBarLink to="/project">PROJECT</NavBarLink>
+                <NavBarLink to="/AboutUs">ABOUTME</NavBarLink>
             </LinkContainer>
         </Navigation>
     );
@@ -31,6 +31,10 @@ const Navigation = styled.nav`
     background-color:white;
     padding:0 5%;
     background-color:black;
+
+    span{
+        color:yellow;
+    }
 `
 const Logo = styled.h1`
     line-height:20px;
