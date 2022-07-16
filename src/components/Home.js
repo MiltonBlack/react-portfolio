@@ -1,130 +1,106 @@
-import React from "react";
+import React from 'react';
+import { FaBootstrap, FaFacebook, FaFigma, FaGithub, FaLinkedin, FaReact, FaTwitter } from 'react-icons/fa';
 import styled from "styled-components";
 
 function Home() {
-    return (
-        <HomePage id="home">
-            <Containter>
-                <Box1>
-                    <Title>Hello my name is Eghoi AZIBAPU Milton, i am a Front End (React) Web Developer</Title>
-                    <Box2>
-                        <Image src="/portfolio-svg/programming.svg"/>
-                    </Box2>
-                </Box1>
-                <Box>
-                    <HireMe>Hire Me</HireMe>
-                </Box>
-            </Containter>
-        </HomePage>
-    );
+  return (
+    <>
+        <HomeSection className='hero' id="home">
+            <div className='container fflex top'>
+                <div className='left top'>
+                    <h3>WELCOME TO MY WORLD</h3>
+                    <h1>Hi, i am <span>MiltonAzibapu</span>
+                    </h1>
+                    <h2> a <span>Professional Developer and Designer</span></h2>
+                    <p>im a Professional web developer and also a web designer. i utilize javascript frameworks like react.js</p>
+                    <div className='hero-btn dflex'>
+                        <div className='col-1'>
+                            <h4>
+                                FIND WITH ME
+                            </h4>
+                            <div className='button'>
+                                <button className='btn-shadow'>
+                                    <FaFacebook fontSize="20px"/>
+                                </button>
+                                <button className='btn-shadow'>
+                                    <FaGithub fontSize="20px"/>
+                                </button>
+                                <button className='btn-shadow'>
+                                    <FaTwitter fontSize="20px"/>
+                                </button>
+                                <button className='btn-shadow'>
+                                    <FaLinkedin fontSize="20px"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='col-1'>
+                            <h4>BEST SKILLS</h4>
+                            <button className='btn-shadow'>
+                                <FaFigma width="20px" height="20px"/>
+                            </button>
+                            <button className='btn-shadow'>
+                                <FaBootstrap/>
+                            </button>
+                            <button className='btn-shadow'>
+                                <FaReact/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className='right'>
+                    <div className='right-img'>
+                        <img src="/portfolio-svg/programming.svg" alt="prog"/>
+                    </div>
+                </div>
+            </div>
+        </HomeSection>
+    </>
+  )
 }
 
-export default Home;
+export default Home
 
-const HomePage = styled.section`
-    height:100vh;
-    background:url("pre.jpg") center center/cover;
-    padding-top:65px;
-`
-const Containter = styled.div`
-    padding:30px 20px;
-    margin:5px 10px;
-    background:rgba(0,0,0,0.5);
-    height:95vh;
-    width:95vw;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:space-between;
-    border-radius:1.2rem;
-
-@media(max-width:768px) {
-    display:block;
-    flex-direction:column;
-    justify-content:space-between;
-    padding:5px 3px;
-    margin:1px 2px;
-}
-`
-const Image = styled.img`
-    height:350px;
-
-
-@media(max-width:786px) {
-    height:200px;
-    margin-bottom:20px;
-}
-`
-const Title = styled.div`
-    color:white;
-    font-size:45px;
-    font-family:cursive;
-    // background-color:rgba(0, 0, 0, 0.5);
-    margin:1rem;
-    border-radius:1rem;
-    text-align:center;
-    height:350px;
-
-@media(max-width:786px){
-    font-size:35px;
-    margin-bottom:30px;
-}
-@media(max-width:976px){
-    font-size:35px;
-    margin-bottom:30px;
-    height:auto;
-}
-`
-const Box = styled.div`
-    width:80%;
-    height:30px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    padding:.2rem 30px;
-    margin:0 25%;
-    border:1px solid white;
-
-@media(max-width:786px) {
-    margin:9px 20px;
-    padding:0 10px;
-}
-`
-const HireMe = styled.button`
-    padding:.3rem 3rem;
-    background-color:yellow;
-    border:none;
-    font-weight:bold;
-    font-size:1rem;
-    transition:.5s;
-    
-&:hover{
-    color:white;
-    background-color:black;
-    cursor:pointer;
-    box-shadow:2px 2px 10px white, 3px 3px 15px white;
+const HomeSection = styled.section`
+    position: relative;
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        span {
+            color:#ff014f;
+        }
     }
-`
-const Box1 = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-@media(max-width:786px) {
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-}
-`
-const Box2 = styled.div`
-    background-color:rgba(255, 255, 255, 0.5);
-    margin:.5rem;
-    border-radius:1rem;
-
-@media(max-width:786px) {
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-}
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color:#ff014f;
+        span {
+            color:black;
+        }
+    }
+    h3 {
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    h4 {
+        font-weight: 500;
+        letter-spacing:2px;
+        color:#43474b;
+        font-size:15px;
+        margin: 30px 0;
+    }
+    p {
+        color: #878e99;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    button {
+        margin-right:20px;
+        transition: 0.5s;
+        &:hover {
+            background: #ff014f;
+            color: white;
+            transform: translateY(-10px);
+        }
+    }
 `

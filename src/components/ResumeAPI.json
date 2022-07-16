@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "category" : "education",
+        "year" : "Tech-Hub (2021-2022)",
+        "title" : "React.js",
+        "desc" : "Acquired the basic and intermidiate knowledge on how to utilize the React.js Library/Framework",
+        "rate" : "4.7/5"
+    },
+    {
+        "id" : 2,
+        "category" : "education",
+        "year" : "Tech-Hub (2019-2021)",
+        "title" : "JavaScript",
+        "desc" : "Acquired the full funcitionalities of JavaScript and utilization",
+        "rate" : "4.85/5"
+    },
+    {
+        "id" : 3,
+        "category" : "education",
+        "year" : "Tech-Hub (2017-2018)",
+        "title" : "HTML and CSS",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 4,
+        "category" : "experience",
+        "year" : "Tech-Hub (2021-2022)",
+        "title" : "Front-End React Developer",
+        "desc" : "Being able to create web the front-end with the basic and advanced building blocks of JSX and Styled Components",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 5,
+        "category" : "experience",
+        "year" : "FACISS (2016-2017)",
+        "title" : "HTML and CSS",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 6,
+        "category" : "experience",
+        "year" : "Tech-Hub (2017-2018)",
+        "title" : "HTML and CSS",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    }
+]

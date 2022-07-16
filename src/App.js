@@ -1,21 +1,25 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Project from './components/Project';
-import AboutUs from './components/AboutUs';
+import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Testimonial from './components/Testimonial';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div>
-      <Router>
         <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/project" element={<Project/>}/>
-          <Route path="/aboutus" element={<AboutUs/>}/>
-        </Routes>
-      </Router>
+        <Home/>
+        <Skills/>
+        <Portfolio/>
+        <Resume/>
+        <Testimonial/>
+        <Contact/>
+        <Footer/>
     </div>
   );
 }

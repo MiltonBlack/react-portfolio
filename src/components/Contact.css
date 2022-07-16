@@ -1,0 +1,90 @@
+img {
+    height:350px;
+    width:350px;
+    object-fit: contain;
+}
+.contact .container .right {
+    margin-left: 5px;
+    padding: 10px;
+}
+.contact .left {
+    width:36%;
+    margin-left: 20px;
+}
+.contact .right {
+    width: 55%;
+    margin-right: 5px;
+}
+.contact .box{
+    padding: 30px;
+}
+.contact .details h1 {
+    margin: 20px 0 20px 0;
+    font-size: 35px;
+}
+.contact .details p{
+    font-size: 17px;
+}
+.contact .button {
+    margin-top: 20px;
+}
+.contact button {
+    margin-right: 20px;
+}
+/* .contact .right button {
+   
+} */
+.contact .right {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .input span{
+    font-size: 13px;
+    background-color: #ff017a;
+    color:white;
+    padding-left: 20px;
+}
+.contact .input {
+    margin-top: 10px;
+    width:400px;
+    border:1px solid #ff014d7a;
+    border-radius: 5px;
+}
+.contact .flexed {
+    display: flex;
+    
+}
+.contact .right button {
+    width:100%;
+    color:#ff014f;
+    margin-top: 20px;
+}
+.contact .right button:hover{
+    color:white;
+}
+.longarrow {
+    margin-left: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.unit{
+    flex:1;
+}
+@media (max-width:768px) {
+    .contact .dflex {
+        flex-direction: column;
+    }
+    .contact .left, 
+    .contact .right {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact img{
+        width:100%;
+    }
+}
