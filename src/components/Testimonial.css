@@ -35,15 +35,15 @@ h2 {
     margin-right: 30px;
 }
 /*---------------Testimonial---------------------------*/
-/* .testimonial .slide {
+.testimonial .slide {
     max-width: 80%;
     margin:auto;
     height:500px;
     position: relative;
     display: flex;
     overflow: hidden;
-} */
-/* article {
+} 
+ article {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,19 +51,19 @@ h2 {
     height: 100%;
     opacity: 0;
     transition: all 0.3s linear;
-} */
-article .activeSlide {
+}
+.article .activeSlide {
     opacity: 1;
     transform: translateX(0);
 }
-article .lastSlide {
+/* .article .lastSlide {
     transform: translateX(-100%);
 }
-article .nextSlide {
-    transform: translateX(100%);
-}
+.article .nextSlide {
+    transform: translateX(100%); */
+/* } */
 @media (max-width:768px) {
-    article{
+    .article{
         flex-direction: column;
         padding: 20px;
     }

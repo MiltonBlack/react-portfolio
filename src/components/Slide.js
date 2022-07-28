@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaQuoteRight} from 'react-icons/fa'
+import { SwiperSlide } from 'swiper/react'
 import TestimonialAPI from './TestimonialAPI'
 
 function Slide(props) {
@@ -11,8 +12,8 @@ function Slide(props) {
     //     position ="lastSlide"
     // }
   return (
-    <>
-        <article className='box dflex'>
+    <div className='article'>
+        <div className='box dflex'>
         {/* <article className={`box dflex ${position}`  }> */}
             <div className='left box-shadow'>
                 <div className='img'>
@@ -36,8 +37,8 @@ function Slide(props) {
                     <p>{props.desc}</p>
                 </div>
             </div>
-        </article>
-    </>
+        </div>
+    </div>
   )
 }
 

@@ -1,6 +1,11 @@
 import React from 'react'
 import Slide from './Slide'
 import TestimonialAPI from './TestimonialAPI'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 import './Testimonial.css'
 
 function Testimonial() {
@@ -32,9 +37,15 @@ function Testimonial() {
                     <h4>WHAT CLIENTS SAY</h4>
                     <h1>Testimonials</h1>
                 </div>
-                <div className='slide'>
+                <Swiper className='slide'
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable:true }}
+                    autoplay={{delay:2000}}>
                     {TestimonialAPI.map((Test, valIndex)=> {
-                        return <Slide key={Test.id} valIndex={valIndex} img={Test.image} name={Test.name} office={Test.office} desc={Test.desc} date={Test.date} post={Test.post} design={Test.design}/>
+                        return <SwiperSlide><Slide key={Test.id} valIndex={valIndex} img={Test.image} name={Test.name} office={Test.office} desc={Test.desc} date={Test.date} post={Test.post} design={Test.design}/></SwiperSlide>
                     })}
                     {/* <div className='slide-button'>
                         <button className='btn-shadow prev-btn' 
@@ -48,7 +59,7 @@ function Testimonial() {
                             <FaArrowRight/>
                         </button>
                     </div> */}
-                </div>
+                </Swiper>
             </div>
         </section>
     </>
