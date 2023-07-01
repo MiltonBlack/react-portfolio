@@ -28,26 +28,28 @@ function Testimonial() {
     //     }, 3000)
     //     return () => clearInterval(slider)
     // },[index])
-    
-  return (
-    <>
-        <section className='testimonial' id='clients'>
-            <div className='container'>
-                <div className='heading text-center'>
-                    <h4>WHAT CLIENTS SAY</h4>
-                    <h1>Testimonials</h1>
-                </div>
-                <Swiper className='slide'
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    navigation
-                    pagination={{ clickable:true }}
-                    autoplay={{delay:2000}}>
-                    {TestimonialAPI.map((Test, valIndex)=> {
-                        return <SwiperSlide><Slide key={Test.id} valIndex={valIndex} img={Test.image} name={Test.name} office={Test.office} desc={Test.desc} date={Test.date} post={Test.post} design={Test.design}/></SwiperSlide>
-                    })}
-                    {/* <div className='slide-button'>
+
+    return (
+        <>
+            <section className='testimonial' id='clients'>
+                <div className='container'>
+                    <div className='heading text-center'>
+                        <h4>WHAT CLIENTS SAY</h4>
+                        <h1>Testimonials</h1>
+                    </div>
+                    <Swiper className='slide'
+                        modules={[Navigation, Pagination, Autoplay]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 2000 }}>
+                        {TestimonialAPI.map((Test, valIndex) => {
+                            return <SwiperSlide>
+                                        <Slide key={Test.id} valIndex={valIndex} img={Test.image} name={Test.name} office={Test.office} desc={Test.desc} date={Test.date} post={Test.post} design={Test.design} />
+                                    </SwiperSlide>
+                        })}
+                        {/* <div className='slide-button'>
                         <button className='btn-shadow prev-btn' 
                         // onClick={() => setIndex(index - 1)}
                         >
@@ -59,11 +61,11 @@ function Testimonial() {
                             <FaArrowRight/>
                         </button>
                     </div> */}
-                </Swiper>
-            </div>
-        </section>
-    </>
-  )
+                    </Swiper>
+                </div>
+            </section>
+        </>
+    )
 }
 
 export default Testimonial

@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaBootstrap, FaFacebook, FaFigma, FaGithub, FaLinkedin, FaReact, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaFigma, FaGithub, FaLinkedin, FaReact, FaTwitter } from 'react-icons/fa';
+import {SiTailwindcss, SiRedux} from 'react-icons/si'
+import {TbBrandReactNative} from 'react-icons/tb'
 import styled from "styled-components";
 
 function Home() {
@@ -11,38 +13,44 @@ function Home() {
                     <h3>WELCOME TO MY WORLD</h3>
                     <h1>Hi, i am <span>MiltonAzibapu</span>
                     </h1>
-                    <h2> a <span>Professional Developer and Designer</span></h2>
-                    <p>im a Professional web developer and also a web designer. i utilize javascript frameworks like react.js</p>
+                    <h2> a <span>Professional Mobile Developer</span></h2>
+                    <p>im a Professional Mobile developer and also a Web designer. i utilize javascript frameworks like React Native and React.js, and CSS frameworks like Tailwindcss, Material UI and Chakra UI</p>
                     <div className='hero-btn dflex'>
                         <div className='col-1'>
                             <h4>
                                 FIND WITH ME
                             </h4>
                             <div className='button'>
-                                <button className='btn-shadow'>
+                                <button className='btn-shadow mb'>
                                     <FaFacebook fontSize="20px"/>
                                 </button>
-                                <button className='btn-shadow'>
+                                <button className='btn-shadow mb'>
                                     <FaGithub fontSize="20px"/>
                                 </button>
-                                <button className='btn-shadow'>
+                                <button className='btn-shadow mb'>
                                     <FaTwitter fontSize="20px"/>
                                 </button>
-                                <button className='btn-shadow'>
+                                <button className='btn-shadow mb'>
                                     <FaLinkedin fontSize="20px"/>
                                 </button>
                             </div>
                         </div>
                         <div className='col-1'>
                             <h4>BEST SKILLS</h4>
-                            <button className='btn-shadow'>
-                                <FaFigma width="20px" height="20px"/>
+                            <button className='btn-shadow mb'>
+                                <FaFigma width="20px" height="20px" size='20px'/>
                             </button>
-                            <button className='btn-shadow'>
-                                <FaBootstrap/>
+                            <button className='btn-shadow mb'>
+                                <SiTailwindcss fontSize="20px"/>
                             </button>
-                            <button className='btn-shadow'>
-                                <FaReact/>
+                            <button className='btn-shadow mb'>
+                                <FaReact size='20px'/>
+                            </button>
+                            <button className='btn-shadow mb'>
+                                <TbBrandReactNative size='20px'/>
+                            </button>
+                            <button className='btn-shadow mb'>
+                                <SiRedux size='20px'/>
                             </button>
                         </div>
                     </div>

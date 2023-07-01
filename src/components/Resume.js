@@ -21,7 +21,7 @@ function Resume() {
                         <div className='content'>
                             {ResumeAPI.map((res, index) => {
                                 if (res.category === "education") {
-                                    return <ResumeCard key={index} title={res.title} year={res.year} desc={res.desc} rate={res.rate}/>
+                                    return (<ResumeCard key={index} title={res.title} year={res.year} desc={res.desc} rate={res.rate}/>)
                                 }
                             })}
                         </div>
