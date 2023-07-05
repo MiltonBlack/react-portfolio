@@ -33,7 +33,7 @@ function PortfolioCard(props) {
 
         {/*--------------------POPUP MODAL------------------------------------*/}
 
-        {modal && (<div className='modal'>
+        {modal && (<div className='modal'> 
             <div onClick={toggleModal} className='overlay'></div>
             <div className='modal-content dflex'>
                 <div className='modal-img left'>

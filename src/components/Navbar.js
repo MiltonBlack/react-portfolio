@@ -27,7 +27,7 @@ function Navbar() {
                         <li><a href='#skills'>Features</a></li>
                         <li><a href='#portfolio'>Portfolio</a></li>
                         <li><a href='#resume'>Resume</a></li>
-                        <li><a href='#clients'>Testimonials</a></li>
+                        {/* <li><a href='#clients'>Testimonials</a></li> */}
                         <li><a href='#contact'>Contact us</a></li>
                         <li><HomeButton className="home-btn"><a href='#contact'>HIRE ME</a></HomeButton></li>
                     </ListItem>

@@ -32,7 +32,7 @@ const SkillsData =
         image : "/skillsAPI/TeamWork.svg"
     },
     {
-        id: 1,
+        id: 6,
         title : "WEB-DEV",
         desc : "Ability to use the existing knowledge of web Development to make front-end websites",
         image : "/skillsAPI/webdev.svg"

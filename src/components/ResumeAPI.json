@@ -2,15 +2,15 @@
     {
         "id" : 1,
         "category" : "education",
-        "year" : "Tech-Hub (2021-2022)",
-        "title" : "React.js",
+        "year" : "Tech-Hub (2017-2018)",
+        "title" : "HTML and CSS",
         "desc" : "Acquired the basic and intermidiate knowledge on how to utilize the React.js Library/Framework",
         "rate" : "4.7/5"
     },
     {
         "id" : 2,
         "category" : "education",
-        "year" : "Tech-Hub (2019-2021)",
+        "year" : "Tech-Hub (2019)",
         "title" : "JavaScript",
         "desc" : "Acquired the full funcitionalities of JavaScript and utilization",
         "rate" : "4.85/5"
@@ -18,8 +18,32 @@
     {
         "id" : 3,
         "category" : "education",
-        "year" : "Tech-Hub (2017-2018)",
-        "title" : "HTML and CSS",
+        "year" : "Tech-Hub (2020)",
+        "title" : "React.js",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 4,
+        "category" : "education",
+        "year" : "Tech-Hub (2021)",
+        "title" : "Mobile Development(React Native)",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 5,
+        "category" : "education",
+        "year" : "Tech-Hub (2022)",
+        "title" : "Node.js, Express.js, Google Firebase and MongoDB",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 5,
+        "category" : "education",
+        "year" : "Tech-Hub (2021)",
+        "title" : "Node.js, Express.js, Google Firebase and MongoDB",
         "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
         "rate" : "4.9/5"
     },
@@ -44,6 +68,30 @@
         "category" : "experience",
         "year" : "Tech-Hub (2017-2018)",
         "title" : "HTML and CSS",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 7,
+        "category" : "experience",
+        "year" : "Fudlist (2022)",
+        "title" : "Fudlist Web Dashboard, customer app, vendor app and dispatch riders app",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 8,
+        "category" : "experience",
+        "year" : "Tensfer (2022-2023)",
+        "title" : "Tensfer Waitlist Page and Customer Dashboard",
+        "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
+        "rate" : "4.9/5"
+    },
+    {
+        "id" : 9,
+        "category" : "experience",
+        "year" : "Kanki Logistics (2023)",
+        "title" : "Kanki Logistics Mobile Application",
         "desc" : "Being able to create web templates with the basic and advanced building blocks of HTML and CSS",
         "rate" : "4.9/5"
     }
